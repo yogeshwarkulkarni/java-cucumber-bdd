@@ -5,6 +5,9 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  schedule:
+    # Run nightly at 00:00 UTC (e.g. 4pm PST / 5pm PDT)
+    - cron: '0 0 * * *'
 
 jobs:
   bdd-tests:
