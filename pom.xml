@@ -68,11 +68,6 @@
                     <includes>
                         <include>**/RunCucumberTest.java</include>
                     </includes>
-                    <properties>
-                        <configurationParameters>
-                            <cucumber.junit-platform.naming-strategy>long</cucumber.junit-platform.naming-strategy>
-                        </configurationParameters>
-                    </properties>
                 </configuration>
             </plugin>
         </plugins>
