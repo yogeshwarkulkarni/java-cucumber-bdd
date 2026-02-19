@@ -23,7 +23,7 @@ echo "==> Pushing to GitHub..."
 if ! git push -u origin main; then
   echo ""
   echo "==> Push was rejected (remote may have README). Merging and pushing..."
-  git pull origin main --allow-unrelated-histories --no-edit
+  git pull origin main --allow-unrelated-histories --no-edit --no-rebase
   git push -u origin main
 fi
 
